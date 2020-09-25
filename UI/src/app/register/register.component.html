@@ -1,0 +1,36 @@
+<div style="min-height: 915px; background-image: url('../../assets/images/b.jpg');">
+  <div class="container">
+    <div class="d-flex justify-content-center h-100">
+      <div class="card" style="top: 260px;">
+        <div class="card-header">
+          <h3>Sign Up</h3>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Enter name" name="name" [(ngModel)]="name">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="Password" name="password" [(ngModel)]="password">
+            </div>
+            <div class="form-check" style="margin-top: 20px;">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" checked="true" name="radioCheck" value="1" [(ngModel)]="userType">
+                <label class="form-check-label" for="inlineRadio2" style="color: white">Customer</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="radioCheck" value="2" [(ngModel)]="userType">
+                <label class="form-check-label" for="inlineRadio1" style="color: white">Admin</label>
+              </div>
+            </div>
+            <input type="submit" value="Register" class="btn float-right login_btn" style="margin-right: 130px; margin-top: 30px;" (click)="register($event)">
+          </form>
+        </div>
+        <div class="card-footer">
+          <div class="d-flex justify-content-center links"><a href="/login">Sign In</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
